@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://172.16.23.216:5432/computo2019
+    username: ruddy.condori
+    password: Top.ENDETEC.2019
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database: postgresql
+    #database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
