@@ -47,7 +47,7 @@ public class ServicioInformateImpl implements IServicioInformate{
 			for (Departamento departamento : departamentoDao.findAll()) {
 				DepartamentoDto departamentoDto = new DepartamentoDto();
 				departamentoDto.setNombreDepartamento(
-						departamentoDto.getNombreDepartamento());
+						departamento.getNomDep());
 				departamentoDto.setNumeroDepartamento(
 						departamento.getNumDep());
 				

@@ -42,7 +42,7 @@ public class Departamento implements Serializable {
     //----------------------------------------------------------------------
     // ENTITY DATA FIELDS 
     //----------------------------------------------------------------------    
-    @Column(name="nom_dep_vc", length=2147483647)
+    @Column(name="nom_dep_vc", length=255)
     private String     nomDep       ;
 
 
