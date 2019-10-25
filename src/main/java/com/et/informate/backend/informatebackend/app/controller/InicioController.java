@@ -12,7 +12,7 @@ public class InicioController {
 	@RequestMapping(value = "", method = RequestMethod.GET)
 	@ResponseBody
 	public String resultadoVerificacion() {
-		return "Resultado de verificacion del PROYECTO - INFORMA";
+		return "Resultado de verificacion del PROYECTO - INFORMA ";
 	}
 
 }

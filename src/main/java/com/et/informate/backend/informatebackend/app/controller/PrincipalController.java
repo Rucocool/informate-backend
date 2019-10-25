@@ -21,8 +21,7 @@ public class PrincipalController {
 			.getLogger(PrincipalController.class);
 	
 	@Autowired
-	IServicioInformate informateServicio;
-	
+	IServicioInformate informateServicio;	
 	
 	@RequestMapping(
     		value = "/informate/ejemplo", 
@@ -32,7 +31,7 @@ public class PrincipalController {
     		@RequestBody SolEjemplo solicitud) {
     	logger.info(" /informate/ejemplo  || INGRESO  ");
     	
-    	logger.info("■■■ /informate/ejemplo  || SOLICITUD ■■■ " 
+    	logger.info("■■■ /informate/ejemplo  || SOLICITUD ■■ " 
     			+ solicitud.toString());
     	    	
     	ResEjemplo resultado = informateServicio.metodoEjemplo(solicitud);

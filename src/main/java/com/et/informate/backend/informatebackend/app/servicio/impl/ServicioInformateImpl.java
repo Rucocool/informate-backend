@@ -40,7 +40,7 @@ public class ServicioInformateImpl implements IServicioInformate{
 		try {			
 			logger.info("■■■ SOLICITUD ■■■ " + solicitud  );
 			
-			//	TODO realizar tarea de ejemplo
+			//	TODO realizar tarea de ejemplo 
 			
 			List<DepartamentoDto> listaDepartamentos = new ArrayList<>();
 			
@@ -58,15 +58,15 @@ public class ServicioInformateImpl implements IServicioInformate{
 			respuesta.setListaDepertamentos(listaDepartamentos);
 			
 			respuesta.getMensajes().add(new UtilMensaje(
-					"Se Realizo La Notificacion Correctamente", 
-					"Se Realizo La Notificacion Correctamente",
+					"Se Realizo La Consulta Correctamente", 
+					"Se Realizo La Consulta Correctamente",
 					UtilTipoMensaje.INFORMATIVO));
 			respuesta.setOk(true);
 
 		} catch (Exception e) {
-			logger.info("■■■ Error, No se Realizo La Notificacion ■■■ " + e );
+			logger.info("■■■ Error, No se Realizo La Consulta ■■■ " + e );
 			respuesta.getMensajes()
-					.add(new UtilMensaje("No se Realizo La Notificacion", 
+					.add(new UtilMensaje("No se Realizo La Consulta", 
 							e.getMessage().toString(), 
 							UtilTipoMensaje.ERROR));
 			respuesta.setOk(false);
